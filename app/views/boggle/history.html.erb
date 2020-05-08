@@ -1,0 +1,34 @@
+
+<div class="col-md-12 m-t-20">
+    <div class="panel panel-default">
+        <div class="panel-heading">Your Boggle History</div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-sm">
+                    <thead class="thead-dark">
+                        <th>Player Ip</th>
+                        <th>Word</th>
+                        <th>Is Valid?</th>
+                    </thead>
+                    <tbody>
+                        <% @history.each do|h|%>
+                            <tr>
+                                <td><%= h.userIp %></td>
+                                <td><%= h.word %></td>
+                                <td><%=
+                                  if h.isValid then 'Yes'
+                                  else 'No'
+                                  end
+                                %></td>
+                            </tr>
+                        <% end%>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <a href="/" class="btn btn-default btn-sm">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,96 @@
+// Place all the styles related to the boggle controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.table-dice {
+    font-size: 20px;
+    font-weight: bold;
+    /* border-radius: 30%; */
+    text-align: center;
+}
+
+button.btn {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button.btn:hover {
+    //  color: green;
+}
+
+.selected {
+    background-color: green;
+}
+
+.next-move {
+    background-color: yellow;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-r-20 {
+    margin-right: 20px;
+}
+
+.input-group {
+    display: flex;
+}
+
+.info {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.info-s {
+    background: #5cb85c;
+}
+
+.info-npm {
+    background: yellow;
+}
+
+.info-nvw {
+    background: red;
+}
+
+.info-li {
+    display: inline;
+    list-style-type: none;
+}
+
+.game-time,
+.modal-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result-point,
+#time-limit {
+    font-weight: 900;
+    color: red;
+}
+
+.modal-body,
+#txt-msg {
+    text-align: center;
+}
+
+.s-w {
+    color: green;
+}
+
+.f-w {
+    color: red;
+}
+
+.f-r {
+    float: right;
+}

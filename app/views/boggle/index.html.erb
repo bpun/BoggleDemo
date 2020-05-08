@@ -1,0 +1,55 @@
+
+
+<div class="row m-t-20">
+    <div class="col-md-12" id="txt-msg">
+        <div class="alert alert-info"><h2>Hi, Wel Come!!!</h2></div>
+    </div>
+    <div class="col-md-12">
+    <div class="game-time">
+        <h2 id="time-limit">Tic Tic</h2>
+    </div>
+    </div>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="input-group mb-3">
+    <input type="text" id="selected-letters" class="form-control" disabled="disabled" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <input class="btn btn-success btn-xs" id="btn-submit" type="Submit"/>
+    </div>
+</div>
+</div>
+<div class=col-md-4>
+ <input class="btn btn-default" id="btn-reset" type="reset"/>
+</div>
+<div class="col-md-4">
+ <a class="btn btn-primary btn-sm f-r" href="/history">My History</a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" id="dice-board">
+</div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">Selected Words</div>
+        <div class="panel-body" id="selected-words">
+        </div>
+        <div class="panel-footer">
+            <div class="col-md-6"><li class="info-li"><span class="info info-s"></span>Valid Word</li></div>
+            <div><li class="info-li"><span class="info info-nvw"></span>Invalid Word</li></div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <!-- Boggle Rules-->
+    <%= render 'rules'%>
+</div>
+</div>
+
+
+<input type="hidden" id="hdn-score" value="0">
+
+<!-- Score Result Modal-->
+<%= render 'result'%>
+
+<%= javascript_pack_tag 'boggle_index' %>
