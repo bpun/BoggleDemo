@@ -7,6 +7,6 @@ class PlayerHistoryTest < ActiveSupport::TestCase
   end
 
   test "History should saved" do
-    assert PlayerHistory.new(userIp: "::2", word:"test", isvalid: true).save
+    assert PlayerHistory.new(userIp: "::2", word:"test", isValid: true).save
   end
 end

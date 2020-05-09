@@ -6,9 +6,8 @@ class BoggleControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
   
-  test "should get Player history" do
-    get: boggle_history_url
-    assert_response :redirect
+  test "should get success response of Player history " do
+    get history_url
+    assert_response :success
   end
-  
 end

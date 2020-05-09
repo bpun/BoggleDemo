@@ -197,12 +197,12 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.2)
   sass-rails (>= 6)
-  selenium-webdriver
+  selenium-webdriver (~> 3.141)
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
-  webdrivers
+  webdrivers (~> 4.0)
   webpacker (~> 4.0)
 
 RUBY VERSION

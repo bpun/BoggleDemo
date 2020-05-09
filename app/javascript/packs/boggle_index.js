@@ -6,7 +6,7 @@
         var validWordDef = [];
         getDashBoardData();
 
-        countDownTimer('time-limit', 1, 0);
+        countDownTimer('time-limit', 3, 0);
         $('button.btn').click(function() {
             var r = $(this).attr('m-r');
             var c = $(this).attr('m-c');
@@ -217,7 +217,7 @@
                     if (parseInt(score) <= 0)
                         msg = '<p>Oops!!!, you have scored: <h1 class="result-point">' + score + ' </h1></p>';
 
-                    msg += '<a id="btn-replay" href="/boggle/index" class="btn btn-primary btn-sm">Click here to Play again</a>';
+                    msg += '<a id="btn-replay" href="/boggle/index" class="btn btn-success btn-sm">Click here to Play again</a>';
                     $('#txt-msg').html('<div class="alert alert-success">' + msg + '</div>');
                     el.html(text);
                     clearInterval(interval);
