@@ -25,7 +25,7 @@ Features:
 
 How to install and run this project to local machine:
 * make sure ruby, rails sqlite3 with above version installed on your local machine
-* clone the project (git clone )
+* clone the project (git clone https://github.com/bpun/BoggleDemo.git)
 * update your yarn (yarn insstall --check-files)
 * migrate db (rails db:migrate)
 * run the project (rails s or rails server)
