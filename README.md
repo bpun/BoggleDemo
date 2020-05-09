@@ -23,6 +23,14 @@ Features:
 * Score will be calculated only for unique valid words.
 * Players can view all the history of word entered
 
+How to install and run this project to local machine:
+* make sure ruby, rails sqlite3 with above version installed on your local machine
+* clone the project (git clone )
+* update your yarn (yarn insstall --check-files)
+* migrate db (rails db:migrate)
+* run the project (rails s or rails server)
+* browse with http://localhost:3000/
+
 I always welcome your feedbacks and comments.
 
                       # Thank you
